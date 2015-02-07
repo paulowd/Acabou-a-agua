@@ -31,16 +31,41 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+    public $components = array(
+        'Session',
+        'Auth' => array(
+            'loginRedirect' => array('controller' => 'relatos', 'action' => 'index'),
+            'logoutRedirect' => array('controller' => 'users', 'action' => 'login'),
+            'authorize' => array('Controller') // Adicionamos essa linha
+        )
+    );
 
 	function beforeFilter() {
         if (isset($this->params['prefix']) && $this->params['prefix'] == 'admin') {
             $this->layout = 'admin';
         } 
-        /*$this->Auth->loginError = "Usuário ou senha incorretos!";
+
+        $this->Auth->loginError = "Usuário ou senha incorretos!";
         $this->Auth->authError = "Você não está autorizado a acessar esta área, por favor faça login.";
 
         if (!isset($this->params['prefix']) || $this->params['prefix'] != 'admin'){
             $this->Auth->allow();
-        }*/
+        }
+    }
+
+    public function isAuthorized($user = null) {
+
+        // Any registered user can access public functions
+        if (empty($this->request->params['admin'])) {
+            return true;
+        }
+
+        // Only admins can access admin functions
+        if (isset($this->request->params['admin'])) {
+            return (bool)($user['role'] === 'admin');
+        }
+
+        // Default deny
+        return false;
     }
 }
