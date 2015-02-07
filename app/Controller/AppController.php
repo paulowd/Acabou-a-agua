@@ -31,4 +31,16 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+
+	function beforeFilter() {
+        if (isset($this->params['prefix']) && $this->params['prefix'] == 'admin') {
+            $this->layout = 'admin';
+        } 
+        /*$this->Auth->loginError = "Usuário ou senha incorretos!";
+        $this->Auth->authError = "Você não está autorizado a acessar esta área, por favor faça login.";
+
+        if (!isset($this->params['prefix']) || $this->params['prefix'] != 'admin'){
+            $this->Auth->allow();
+        }*/
+    }
 }
