@@ -51,6 +51,11 @@ class AppController extends Controller {
         if (!isset($this->params['prefix']) || $this->params['prefix'] != 'admin'){
             $this->Auth->allow();
         }
+        
+        $user = $this->Auth->user();
+        if(!empty($user)){
+            $this->set('user', $user);
+        }
     }
 
     public function isAuthorized($user = null) {
