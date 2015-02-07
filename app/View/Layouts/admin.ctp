@@ -18,7 +18,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>QPresente - <?php echo $title_for_layout; ?></title>
+        <title>Acabou a água - <?php echo $title_for_layout; ?></title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <?php echo $this->Html->css('admin/bootstrap.min'); ?>
