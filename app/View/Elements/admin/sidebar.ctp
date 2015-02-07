@@ -42,7 +42,7 @@
                             <?php echo $this->Html->link('<i class="fa fa-building"></i> <span>Bairros</span>', '/admin/bairros', array('escape' => false)); ?>
                         </li>
                         <li>
-                            <?php echo $this->Html->link('<i class="fa fa-trash-o"></i> <span>Usuárops</span>', '/admin/users', array('escape' => false)); ?>
+                            <?php echo $this->Html->link('<i class="fa fa-trash-o"></i> <span>Usuários</span>', '/admin/users', array('escape' => false)); ?>
                         </li>
                         <!-- <li>
                             <a href="widgets.html">
