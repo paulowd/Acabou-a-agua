@@ -1,49 +1,22 @@
-# CakePHP
+#Acabou a água
 
-[![Bake Status](https://secure.travis-ci.org/cakephp/cakephp.png?branch=master)](http://travis-ci.org/cakephp/cakephp)
-[![Latest Stable Version](https://poser.pugx.org/cakephp/cakephp/v/stable.svg)](https://packagist.org/packages/cakephp/cakephp)
-[![License](https://poser.pugx.org/cakephp/cakephp/license.svg)](https://packagist.org/packages/cakephp/cakephp)
-
-[![CakePHP](http://cakephp.org/img/cake-logo.png)](http://www.cakephp.org)
-
-CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Active Record, Association Data Mapping, Front Controller and MVC.
-Our primary goal is to provide a structured framework that enables PHP users at all levels to rapidly develop robust web applications, without any loss to flexibility.
+O projeto acabou a água foi criado com o intuito de mapear a falta de água principalmente em São Paulo. O projeto conta com a colaboração de usuários que relatam sua experiência com a falta de água em suas residências/trabalho.
 
 
-## Some Handy Links
+## Ferramentas
+
+O projeto foi desenvolvido utilizando o framework CakePHP no backend, a biblioteca jQuery para auxílio na usabilidade e Less para compilação de arquivos CSS.
+
+## Time
+
+[![Paulo Geremias](//avatars3.githubusercontent.com/u/4650743?v=3&s=460)](https://github.com/paulowd)
+[Paulo Geremias](https://github.com/paulowd)<br>Idealizador, designer e desenvolvedor backend.
+
+[![Marcelo Geremias](//fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/p160x160/10947265_784164414995497_4432919830268651081_n.jpg?oh=6718cf571b5cbff68c3ec481a266e4c8&oe=554C7C63&__gda__=1431891934_e2baa96c9c656416c59ca2edd4eaf091)](https://github.com/marcelogeremias)
+[Marcelo Geremias](https://github.com/marcelogeremias)<br>Desenvolvedor frontend e backend.
+
+## Alguns links
 
 [CakePHP](http://www.cakephp.org) - The rapid development PHP framework
-
-[CookBook](http://book.cakephp.org) - THE CakePHP user documentation; start learning here!
-
-[API](http://api.cakephp.org) - A reference to CakePHP's classes
-
-[Plugins](http://plugins.cakephp.org/) - A repository of extensions to the framework
-
-[The Bakery](http://bakery.cakephp.org) - Tips, tutorials and articles
-
-[Community Center](http://community.cakephp.org) - A source for everything community related
-
-[Training](http://training.cakephp.org) - Join a live session and get skilled with the framework
-
-[CakeFest](http://cakefest.org) - Don't miss our annual CakePHP conference
-
-[Cake Software Foundation](http://cakefoundation.org) - Promoting development related to CakePHP
-
-
-## Get Support!
-
-[#cakephp](http://webchat.freenode.net/?channels=#cakephp) on irc.freenode.net - Come chat with us, we have cake
-
-[Google Group](https://groups.google.com/group/cake-php) - Community mailing list and forum
-
-[GitHub Issues](https://github.com/cakephp/cakephp/issues) - Got issues? Please tell us!
-
-[Roadmaps](https://github.com/cakephp/cakephp/wiki#roadmaps) - Want to contribute? Get involved!
-
-
-## Contributing
-
-[CONTRIBUTING.md](CONTRIBUTING.md) - Quick pointers for contributing to the CakePHP project
-
-[CookBook "Contributing" Section (2.x)](http://book.cakephp.org/2.0/en/contributing.html) [(3.0)](http://book.cakephp.org/3.0/en/contributing.html) - Version-specific details about contributing to the project
+[{Less.js}](http://lesscss.org/) - Less.js
+[jQuery](http://jquery.com/) - jQuery - Write less, do more.
